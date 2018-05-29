@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/melmsie/personal-site#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "snekfetch": "^4.0.0"
   }
 }
