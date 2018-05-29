@@ -1,0 +1,292 @@
+html {
+    position: relative;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #FFF;
+    color: #000;
+    font-weight: 200;
+}
+
+.background {
+    height: 713px;
+    width: 1920px;
+    background-image: url('../img/city.jpg');
+}
+
+.fa-5x {
+    font-size: 5em;
+}
+
+.fa-6x {
+    font-size: 6em;
+}
+
+.fa-7x {
+    font-size: 7em;
+}
+
+.texty {
+    font-size: 1.15em !important;
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoRss:hover {
+    background-color: black;
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+
+.social-network a.icoGoogle:hover {
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+}
+
+.social-network a.icoVimeo:hover {
+    background-color: #0590B8;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoRss:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.sm {
+    margin-top: 7.5rem !important;
+}
+
+
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.social-network a {
+    background-color: #D3D3D3;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Edited Bootstrap 4 Code */
+
+.footer-light {
+    background-color: #212324;
+}
+
+.link-white {
+    color: #FFF;
+}
+
+.navbar {
+    padding: 1.5rem 1rem;
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: rgb(250, 250, 250);
+}
+
+.fa-5x {
+    font-size: 5em;
+}
+
+.fa-6x {
+    font-size: 6em;
+}
+
+.fa-7x {
+    font-size: 7em;
+}
+
+.js-tilt {
+    height: 100px;
+    
+}
+
+.grow1 {
+    transition: all .2s ease-in-out;
+    color: black;
+}
+
+.grow1:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+    color: white;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.container-fluid {
+    padding-left: 0px;
+}
+
+.top.space {
+    padding-top: 5px;
+    margin-top: 5pc;
+}
+
+.wrap {
+    color: white !important;
+}
+
+.fixes {
+    padding-top: 3.755rem!important;
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+    font-weight: 300;
+    text-shadow: 1px 1px black;
+}
+
+span.highlight {
+    background-color: black;
+    opacity: 0.4;
+    padding: 5px;
+}
+
+div.transbox h2 {
+    font-weight: bold;
+    color: white;
+}
+
+
+.top-part {
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.top-part .hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/city.jpg');
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -webkit-filter: blur(0.8px);
+    -o-filter: blur(0.8px);
+    filter: blur(0.8px);
+}
+
+.top-part .hero-image:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.footer-light {
+    background-color: #212324;
+    color: white !important;
+}
+
+.navbar-inverse {
+    background-color: #292b2c!important;
+}
