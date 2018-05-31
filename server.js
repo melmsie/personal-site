@@ -17,8 +17,29 @@ app.get('/whoami', async (req, res) => {
     'language': req.headers['accept-language'].split(',')[0],
     'software': req.headers['user-agent'].match(/\((.*?)\)/)[1]
   }
-  console.log(location.body)
   return res.json(whoAmI)
+})
+
+app.get('/date/*', async (req, res) => {
+  let pre
+  let converted
+  let input = decodeURI(req.url).split('/')[2]
+  if (isNaN(input)) {
+    pre = new Date(input)
+    converted = pre.getTime() / 1000
+  } else {
+    pre = new Date(input * 1000)
+    converted = pre.toDateString()
+  }
+  const final = {
+    'before': input,
+    'after': converted
+  }
+  return res.json(final)
+})
+
+app.get('/short/*', async (req, res) => {
+  return res.json('Coming soon')
 })
 
 app.use(function (req, res, next) {
