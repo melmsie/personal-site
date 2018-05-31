@@ -1,6 +1,9 @@
 const express = require('express')
-let path = require('path')
-let app = express()
+const path = require('path')
+const app = express()
+const tech = express.Router()
+const subD = require('express-subdomain')
+app.use(subD('tech', tech))
 app.set('trust proxy', true)
 app.set('port', 80)
 const snek = require('snekfetch')
@@ -9,8 +12,13 @@ const config = require('./config.json')
   // TODO: add an about page at about.melmsie.com [markdown?]
   // TODO: add a "see my tech stack" page at stack.melmsie.com [markdown?]
   // TODO: add a fully authed kid counter page at kwc.melmsie.com [MongoDB?]
+  // TODO: add melmsie.com/image/[imagename] for some of my favorite/memey images
 */
 app.use(express.static(path.join(__dirname, '../personal-site')))
+
+tech.get('/', async (req, res) => { // TODO: [Markdown?]
+  return res.send('hello?')
+})
 
 app.get('/whoami', async (req, res) => {
   // TODO: Make this pretty
@@ -57,8 +65,7 @@ app.get('/short/*', async (req, res) => {
 
 app.use(function (req, res, next) {
   // TODO: 404 page when
-  res.status(404)
-  res.send('404: Page Not Found')
+  res.sendFile(`${__dirname}/404.html`)
 })
 
 app.listen(app.get('port'), function () {

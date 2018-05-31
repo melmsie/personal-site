@@ -19,6 +19,7 @@
   "homepage": "https://github.com/melmsie/personal-site#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "express-subdomain": "^1.0.5",
     "snekfetch": "^4.0.0"
   }
 }
