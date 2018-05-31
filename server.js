@@ -20,6 +20,10 @@ app.get('/whoami', async (req, res) => {
   return res.json(whoAmI)
 })
 
+app.get('/date', async (req, res) => {
+  return res.send('Send a Unix timestamp, or natural language date to "/date/" and receive the opposite JSON reponse.')
+})
+
 app.get('/date/*', async (req, res) => {
   let pre
   let converted
@@ -39,7 +43,7 @@ app.get('/date/*', async (req, res) => {
 })
 
 app.get('/short/*', async (req, res) => {
-  return res.json('Coming soon')
+  return res.send('Coming soon')
 })
 
 app.use(function (req, res, next) {
